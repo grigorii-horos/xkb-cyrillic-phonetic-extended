@@ -1,114 +1,60 @@
 partial alphanumeric_keys
 xkb_symbols "ruexph" {
 
-    
     name[Group1]= "Russian Extended Phonetical";
     
-    
-    key <AE01> { [           1,      exclam  ] };
-    key <AE02> { [           2,          at  ] };
-    key <AE03> { [           3, Cyrillic_io  ] };
-    key <AE04> { [           4, Cyrillic_IO  ] };
-    key <AE05> { [           5, Cyrillic_hardsign  ] };
-    key <AE06> { [           6, Cyrillic_HARDSIGN  ] };
-    key <AE07> { [           7,   ampersand  ] };
-    key <AE08> { [           8,    asterisk  ] };
-    key <AE09> { [           9,   parenleft  ] };
-    key <AE10> { [           0,  parenright  ] };
-    key <AE11> { [       minus,  underscore  ] };
+    key <TLDE> {[   Cyrillic_yu      ,   Cyrillic_YU      ,   U0060          ,   U007E        ]};
+    key <AE01> {[   U0031            ,   U0021            ,   U00B9          ,   U00B9        ]};
+    key <AE02> {[   U0032            ,   U0040            ,   U00B2          ,   U00BD        ]};
+    key <AE03> {[   U0033            ,   U0023            ,   U00B3          ,   U2153        ]};
+    key <AE04> {[   U0034            ,   U0024            ,   U2074          ,   U00BC        ]};
+    key <AE05> {[   U0035            ,   U0025            ,   U2030          ,   U2030        ]};
+    key <AE06> {[   U0036            ,   U005E            ,   U2191          ,   U0302        ]};
+    key <AE07> {[   U0037            ,   U0026            ,   U0037          ,   U0037        ]};
+    key <AE08> {[   U0038            ,   U002A            ,   U221E          ,   U221E        ]};
+    key <AE09> {[   U0039            ,   U0028            ,   U2190          ,   U2190        ]};
+    key <AE10> {[   U0030            ,   U0029            ,   U2192          ,   U2192        ]};
+    key <AE11> {[   U002D            ,   U005F            ,   U2014          ,   U2013        ]};
+    key <AE12> {[   Cyrillic_che     ,   Cyrillic_CHE     ,   U003D          ,   U002B        ]};
 
-    key <AB09> { [      period,     greater  ] };
-    key <AB10> { [       slash,    question  ] };
-    key <AB08> { [       comma,        less  ] };
-    key <AC10> { [   semicolon,       colon  ] };
-    key <AC11> { [  apostrophe,    quotedbl  ] };
-    key <LSGT> { [         bar,   brokenbar  ] };
+    key <AD01> {[   Cyrillic_ya      ,   Cyrillic_YA                                          ]};
+    key <AD02> {[   Cyrillic_ve      ,   Cyrillic_VE      ,   U0446          ,   U0446        ]};
+    key <AD03> {[   Cyrillic_ie      ,   Cyrillic_IE      ,   Cyrillic_io    ,   Cyrillic_IO  ]};
+    key <LatR> {[   Cyrillic_er      ,   Cyrillic_ER      ,   U00AE          ,   U00AE        ]};
+    key <LatT> {[   Cyrillic_te      ,   Cyrillic_TE      ,   U2122          ,   U2122        ]};
+    key <LatY> {[   Cyrillic_yeru    ,   Cyrillic_YERU                                        ]};
+    key <LatU> {[   Cyrillic_u       ,   Cyrillic_U       ,   U045E          ,   U040E        ]};
+    key <LatI> {[   Cyrillic_i       ,   Cyrillic_I       ,   U0456          ,   U0406        ]};
+    key <LatO> {[   Cyrillic_o       ,   Cyrillic_O       ,   U00B0          ,   U00B0        ]};
+    key <LatP> {[   Cyrillic_pe      ,   Cyrillic_PE                                          ]};
+    key <AD11> {[   Cyrillic_sha     ,   Cyrillic_SHA     ,   U005B          ,   U007B        ]};
+    key <AD12> {[   Cyrillic_shcha   ,   Cyrillic_SHCHA   ,   U005D          ,   U007D        ]};
+    key <BKSL> {[   Cyrillic_e       ,   Cyrillic_E       ,   U005C          ,   U007C        ]};
 
-    key <TLDE> { [       Cyrillic_yu,       Cyrillic_YU  ] };
-    key <LatQ> { [       Cyrillic_ya,       Cyrillic_YA  ] };
-    key <LatZ> { [       Cyrillic_ze,       Cyrillic_ZE  ] };
-    key <LatS> { [       Cyrillic_es,       Cyrillic_ES  ] };
-    key <LatA> { [        Cyrillic_a,        Cyrillic_A  ] };
-    key <LatW> { [       Cyrillic_ve,       Cyrillic_VE  ] };
-    key <LatC> { [      Cyrillic_tse,      Cyrillic_TSE  ] };
-    key <LatX> { [ Cyrillic_softsign, Cyrillic_SOFTSIGN  ] };
-    key <LatD> { [       Cyrillic_de,       Cyrillic_DE  ] };
-    key <LatE> { [       Cyrillic_ie,       Cyrillic_IE  ] };
-    key <LatV> { [      Cyrillic_zhe,      Cyrillic_ZHE  ] };
-    key <LatF> { [       Cyrillic_ef,       Cyrillic_EF  ] };
-    key <LatT> { [       Cyrillic_te,       Cyrillic_TE  ] };
-    key <LatR> { [       Cyrillic_er,       Cyrillic_ER  ] };
-    key <LatN> { [       Cyrillic_en,       Cyrillic_EN  ] };
-    key <LatB> { [       Cyrillic_be,       Cyrillic_BE  ] };
-    key <LatH> { [       Cyrillic_ha,       Cyrillic_HA  ] };
-    key <LatG> { [      Cyrillic_ghe,      Cyrillic_GHE  ] };
-    key <LatY> { [     Cyrillic_yeru,     Cyrillic_YERU  ] };
-    key <LatM> { [       Cyrillic_em,       Cyrillic_EM  ] };
-    key <LatJ> { [   Cyrillic_shorti,   Cyrillic_SHORTI  ] };
-    key <LatU> { [        Cyrillic_u,        Cyrillic_U  ] };
-    key <LatK> { [       Cyrillic_ka,       Cyrillic_KA  ] };
-    key <LatI> { [        Cyrillic_i,        Cyrillic_I  ] };
-    key <LatO> { [        Cyrillic_o,        Cyrillic_O  ] };
-    key <LatL> { [       Cyrillic_el,       Cyrillic_EL  ] };
-    key <LatP> { [       Cyrillic_pe,       Cyrillic_PE  ] };
+    key <LatA> {[   Cyrillic_a       ,   Cyrillic_A       ,   U2248          ,   U00A7        ]};
+    key <LatS> {[   Cyrillic_es      ,   Cyrillic_ES                                          ]};
+    key <LatD> {[   Cyrillic_de      ,   Cyrillic_DE                                          ]};
+    key <LatF> {[   Cyrillic_ef      ,   Cyrillic_EF                                          ]};
+    key <LatG> {[   Cyrillic_ghe     ,   Cyrillic_GHE     ,   U0491          ,   U0490        ]};
+    key <LatH> {[   Cyrillic_ha      ,   Cyrillic_HA      ,   U0440          ,   U0440        ]};
+    key <LatJ> {[   Cyrillic_shorti  ,   Cyrillic_SHORTI  ,   U0457          ,   U0407        ]};
+    key <LatK> {[   Cyrillic_ka      ,   Cyrillic_KA      ,   U201C          ,   U2018        ]};
+    key <LatL> {[   Cyrillic_el      ,   Cyrillic_EL      ,   U201D          ,   U2019        ]};
+    key <AC10> {[   semicolon        ,   colon                                                ]};
+    key <AC11> {[   apostrophe       ,   quotedbl         ,   U0454          ,   U0404        ]};
 
-    key <AD11> { [      Cyrillic_sha,      Cyrillic_SHA  ] };
-    key <AE12> { [      Cyrillic_che,      Cyrillic_CHE  ] };
-    key <AD12> { [    Cyrillic_shcha,    Cyrillic_SHCHA  ] };
-    key <BKSL> { [        Cyrillic_e,        Cyrillic_E  ] };
+    key <LatZ> {[   Cyrillic_ze      ,   Cyrillic_ZE      ,   U044F          ,   U044F        ]};
+    key <LatX> {[   Cyrillic_softsign,   Cyrillic_SOFTSIGN,   Cyrillic_hardsign, Cyrillic_HARDSIGN  ]};
+    key <LatC> {[   Cyrillic_tse     ,   Cyrillic_TSE     ,   U00A9          ,   U2103        ]};
+    key <LatV> {[   Cyrillic_zhe     ,   Cyrillic_ZHE     ,   U2193          ,   U030C        ]};
+    key <LatB> {[   Cyrillic_be      ,   Cyrillic_BE      ,   U0438          ,   U0438        ]};
+    key <LatN> {[   Cyrillic_en      ,   Cyrillic_EN                                          ]};
+    key <LatM> {[   Cyrillic_em      ,   Cyrillic_EM      ,   U2212          ,   U2212        ]};
+    key <AB08> {[   comma            ,   less             ,   U00AB          ,   U201E        ]};
+    key <AB09> {[   period           ,   greater          ,   U00BB          ,   U201C        ]};
+    key <AB10> {[   slash            ,   question         ,   U2026          ,   U0301        ]};
     
+    key <LSGT> {[   bar              ,   brokenbar  ]};
     
-    
-    
-    
-    
-    
-    key <TLDE> {[   U0451   ,   U0401   ,   U04A9   ,   U04A8   ]};
-    key <AE01> {[   U0031   ,   U0021   ,   U00B9   ,   U203D   ]};
-    key <AE02> {[   U0032   ,   U0022   ,   U00B2   ,   U00BD   ]};
-    key <AE03> {[   U0033   ,   U2116   ,   U00B3   ,   U2153   ]};
-    key <AE04> {[   U0034   ,   U003B   ,   U20B4   ,   U00BC   ]};
-    key <AE05> {[   U0035   ,   U0025   ,   U2030   ,   U2030   ]};
-    key <AE06> {[   U0036   ,   U003A   ,   U2191   ,   U0302   ]};
-    key <AE07> {[   U0037   ,   U003F   ,   U2048   ,   U2049   ]};
-    key <AE08> {[   U0038   ,   U002A   ,   U221E   ,   U221E   ]};
-    key <AE09> {[   U0039   ,   U0028   ,   U2190   ,   U2190   ]};
-    key <AE10> {[   U0030   ,   U0029   ,   U2192   ,   U2192   ]};
-    key <AE11> {[   U002D   ,   U005F   ,   U2014   ,   U2013   ]};
-    key <AE12> {[   U003D   ,   U002B   ,   U2260   ,   U00B1   ]};
-    key <AD01> {[   U0439   ,   U0419   ,   U0439   ,   U0306   ]};
-    key <AD02> {[   U0446   ,   U0426   ,   U0446   ,   U0446   ]};
-    key <AD03> {[   U0443   ,   U0423   ,   U045E   ,   U040E   ]};
-    key <AD04> {[   U043A   ,   U041A   ,   U00AE   ,   U00AE   ]};
-    key <AD05> {[   U0435   ,   U0415   ,   U2122   ,   U2122   ]};
-    key <AD06> {[   U043D   ,   U041D   ,   U0024   ,   U20AC   ]};
-    key <AD07> {[   U0433   ,   U0413   ,   U0491   ,   U0490   ]};
-    key <AD08> {[   U0448   ,   U0428   ,   U00E6   ,   U00C6   ]};
-    key <AD09> {[   U0449   ,   U0429   ,   U0153   ,   U0152   ]};
-    key <AD10> {[   U0437   ,   U0417   ,   U0027   ,   U0022   ]};
-    key <AD11> {[   U0445   ,   U0425   ,   U0445   ,   U0445   ]};
-    key <AD12> {[   U044A   ,   U042A   ,   U0457   ,   U0407   ]};
-    key <BKSL> {[   U005C   ,   U002F   ,   U005C   ,   U0300   ]};
-    key <AC01> {[   U0444   ,   U0424   ,   U2248   ,   U00A7   ]};
-    key <AC02> {[   U044B   ,   U042B   ,   U0456   ,   U0406   ]};
-    key <AC03> {[   U0432   ,   U0412   ,   U00B0   ,   U2103   ]};
-    key <AC04> {[   U0430   ,   U0410   ,   U00A3   ,   U2109   ]};
-    key <AC05> {[   U043F   ,   U041F   ,   U043F   ,   U043F   ]};
-    key <AC06> {[   U0440   ,   U0420   ,   U0440   ,   U0440   ]};
-    key <AC07> {[   U043E   ,   U041E   ,   U201E   ,   U201E   ]};
-    key <AC08> {[   U043B   ,   U041B   ,   U201C   ,   U2018   ]};
-    key <AC09> {[   U0434   ,   U0414   ,   U201D   ,   U2019   ]};
-    key <AC10> {[   U0436   ,   U0416   ,   U0436   ,   U0308   ]};
-    key <AC11> {[   U044D   ,   U042D   ,   U0454   ,   U0404   ]};
-    key <AB01> {[   U044F   ,   U042F   ,   U044F   ,   U044F   ]};
-    key <AB02> {[   U0447   ,   U0427   ,   U00D7   ,   U22C5   ]};
-    key <AB03> {[   U0441   ,   U0421   ,   U00A9   ,   U00A2   ]};
-    key <AB04> {[   U043C   ,   U041C   ,   U2193   ,   U030C   ]};
-    key <AB05> {[   U0438   ,   U0418   ,   U0438   ,   U0438   ]};
-    key <AB06> {[   U0442   ,   U0422   ,   U0442   ,   U0303   ]};
-    key <AB07> {[   U044C   ,   U042C   ,   U2212   ,   U2212   ]};
-    key <AB08> {[   U0431   ,   U0411   ,   U00AB   ,   U201E   ]};
-    key <AB09> {[   U044E   ,   U042E   ,   U00BB   ,   U201C   ]};
-    key <AB10> {[   U002E   ,   U002C   ,   U2026   ,   U0301   ]};
     key <SPCE> {[U0020, U0020, U00A0, U00A0]};
 };

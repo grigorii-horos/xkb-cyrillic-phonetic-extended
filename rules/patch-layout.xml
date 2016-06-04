@@ -1,0 +1,18 @@
+    <layout>
+      <configItem>
+        <name>ru_exph</name>
+        <shortDescription>Рус</shortDescription>
+        <description>Русская фонетическая со специальными символами</description>
+        <languageList>
+          <iso639Id>rus</iso639Id>
+        </languageList>
+      </configItem>
+      <variantList>
+        <variant>
+          <configItem>
+            <name>ru_exph</name>
+            <description>Русская фонетическая со специальными символами</description>
+          </configItem>
+        </variant>
+      </variantList>
+    </layout>

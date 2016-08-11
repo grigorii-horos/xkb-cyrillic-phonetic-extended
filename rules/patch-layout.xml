@@ -1,7 +1,7 @@
     <layout>
       <configItem>
         <name>ru_ex</name>
-        <shortDescription>Рус</shortDescription>
+        <shortDescription>ru</shortDescription>
         <description>Русская со специальными символами</description>
         <languageList>
           <iso639Id>rus</iso639Id>

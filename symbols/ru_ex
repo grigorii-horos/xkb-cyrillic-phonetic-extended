@@ -36,13 +36,13 @@ xkb_symbols "ruexph" {
   key <LatD> {[ Cyrillic_de , Cyrillic_DE ]};
   key <LatF> {[ Cyrillic_ef , Cyrillic_EF , U0473 , U0472 ]};
   key <LatG> {[ Cyrillic_ghe , Cyrillic_GHE , U0491 , U0490 ]};
-  key <LatH> {[ Cyrillic_ha , Cyrillic_HA , U0440 , U0440 ]};
+  key <LatH> {[ Cyrillic_ha , Cyrillic_HA  ]};
   key <LatJ> {[ Cyrillic_shorti , Cyrillic_SHORTI , U0475 , U0474 ]};
   key <LatK> {[ Cyrillic_ka , Cyrillic_KA , U201C , U2018 ]};
   key <LatL> {[ Cyrillic_el , Cyrillic_EL , U201D , U2019 ]};
   key <AC10> {[ semicolon , colon ]};
   key <AC11> {[ apostrophe , quotedbl , U0454 , U0404 ]};
-  
+
   key <LatZ> {[ Cyrillic_ze , Cyrillic_ZE , U045F , U040F ]};
   key <LatX> {[ Cyrillic_softsign, Cyrillic_SOFTSIGN, Cyrillic_hardsign, Cyrillic_HARDSIGN ]};
   key <LatC> {[ Cyrillic_tse , Cyrillic_TSE , U00A9 , U2103 ]};

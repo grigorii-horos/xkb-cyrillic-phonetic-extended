@@ -33,7 +33,7 @@ xkb_symbols "ruexph" {
 
   key <LatA> {[ Cyrillic_a , Cyrillic_A, U2248, U00B6]};
   key <LatS> {[ Cyrillic_es , Cyrillic_ES ]};
-  key <LatD> {[ Cyrillic_de , Cyrillic_DE ]};
+  key <LatD> {[ Cyrillic_de , Cyrillic_DE, U00F7, U2215 ]};
   key <LatF> {[ Cyrillic_ef , Cyrillic_EF , U0473 , U0472 ]};
   key <LatG> {[ Cyrillic_ghe , Cyrillic_GHE , U0491 , U0490 ]};
   key <LatH> {[ Cyrillic_ha , Cyrillic_HA  ]};

@@ -2,7 +2,7 @@
       <configItem>
         <name>ru_ex</name>
         <shortDescription>ru</shortDescription>
-        <description>Русская со специальными символами</description>
+        <description>Фонетическая со специальными символами</description>
         <languageList>
           <iso639Id>rus</iso639Id>
         </languageList>
@@ -11,7 +11,7 @@
         <variant>
           <configItem>
             <name>ruexph</name>
-            <description>Русская фонетическая со специальными символами</description>
+            <description>Фонетическая со специальными символами</description>
           </configItem>
         </variant>
       </variantList>

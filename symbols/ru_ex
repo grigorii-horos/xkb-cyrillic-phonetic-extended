@@ -3,19 +3,19 @@ xkb_symbols "ruexph" {
 
   name[Group1] = "Russian Extended Phonetical";
 
-  key <TLDE> {[ U044E, U042 , U0060 , U007E ]};
-  key <AE01> {[ U0031, U0021 , U00B9 , U222B ]};
-  key <AE02> {[ U0032, U0040 , U00B2 , U00BD ]};
-  key <AE03> {[ U0033 , U0023 , U00B3 , U2153 ]};
-  key <AE04> {[ U0034 , U0024 , U2074 , U00BC ]};
-  key <AE05> {[ U0035 , U0025 , U2030 , U2031 ]};
-  key <AE06> {[ U0036 , U005E , U2191 , U0302 ]};
-  key <AE07> {[ U0037 , U0026 , U2049 , U2048 ]};
-  key <AE08> {[ U0038 , U002A , U221E , U221A ]};
-  key <AE09> {[ U0039 , U0028 , U2190 , U2264 ]};
-  key <AE10> {[ U0030 , U0029 , U2192 , U2265 ]};
-  key <AE11> {[ U002D , U005F , U2014 , U2013 ]};
-  key <AE12> {[ U0447 , U0427 , U003D , U002B ]};
+  key <TLDE> {[ U044E, U042E , U0060, U007E ]};
+  key <AE01> {[ U0031, U0021, U00B9, U222B ]};
+  key <AE02> {[ U0032, U0040, U00B2, U00BD ]};
+  key <AE03> {[ U0033, U0023, U00B3, U2153 ]};
+  key <AE04> {[ U0034, U0024, U2074, U00BC ]};
+  key <AE05> {[ U0035, U0025, U2030, U2031 ]};
+  key <AE06> {[ U0036, U005E, U2191, U0302 ]};
+  key <AE07> {[ U0037, U0026, U2049, U2048 ]};
+  key <AE08> {[ U0038, U002A, U221E, U221A ]};
+  key <AE09> {[ U0039, U0028, U2190, U2264 ]};
+  key <AE10> {[ U0030, U0029, U2192, U2265 ]};
+  key <AE11> {[ U002D, U005F, U2014, U2013 ]};
+  key <AE12> {[ U0447, U0427, U003D, U002B ]};
 
   key <AD01> {[ U044F , U042F ]}; # я
   key <AD02> {[ U0432 , U0412 ]}; # в
@@ -31,7 +31,7 @@ xkb_symbols "ruexph" {
   key <AD12> {[ Cyrillic_shcha , Cyrillic_SHCHA , U005D , U007D ]};
   key <BKSL> {[ Cyrillic_e , Cyrillic_E , U005C , U007C ]};
 
-  key <LatA> {[ Cyrillic_a , Cyrillic_A , U00B6 , U2248]};
+  key <LatA> {[ Cyrillic_a , Cyrillic_A, U2248, U00B6]};
   key <LatS> {[ Cyrillic_es , Cyrillic_ES ]};
   key <LatD> {[ Cyrillic_de , Cyrillic_DE ]};
   key <LatF> {[ Cyrillic_ef , Cyrillic_EF , U0473 , U0472 ]};

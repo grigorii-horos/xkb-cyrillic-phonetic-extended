@@ -3,58 +3,59 @@ xkb_symbols "ruexph" {
 
   name[Group1] = "Russian Extended Phonetical";
 
-  key <TLDE> {[ U044E, U042E , U0060, U007E ]};
-  key <AE01> {[ U0031, U0021, U00B9, U222B ]};
-  key <AE02> {[ U0032, U0040, U00B2, U00BD ]};
-  key <AE03> {[ U0033, U0023, U00B3, U2153 ]};
-  key <AE04> {[ U0034, U0024, U2074, U00BC ]};
-  key <AE05> {[ U0035, U0025, U2030, U2031 ]};
-  key <AE06> {[ U0036, U005E, U2191, U0302 ]};
-  key <AE07> {[ U0037, U0026, U2049, U2048 ]};
-  key <AE08> {[ U0038, U002A, U221E, U221A ]};
-  key <AE09> {[ U0039, U0028, U2190, U2264 ]};
-  key <AE10> {[ U0030, U0029, U2192, U2265 ]};
-  key <AE11> {[ U002D, U005F, U2014, U2013 ]};
-  key <AE12> {[ U0447, U0427, U003D, U002B ]};
+  key <TLDE> {[ U044E, U042E, U0060, U007E ]}; # юЮ`~
+  key <AE01> {[ U0031, U0021, U00B9, U222B ]}; # 1!¹∫
+  key <AE02> {[ U0032, U0040, U00B2, U00BD ]}; # 2@²½
+  key <AE03> {[ U0033, U0023, U00B3, U2153 ]}; # 3#³⅓
+  key <AE04> {[ U0034, U0024, U2074, U00BC ]}; # 4$⁴¼
+  key <AE05> {[ U0035, U0025, U2030, U2031 ]}; # 5%‰‱
+  key <AE06> {[ U0036, U005E, U2191, U0302 ]}; # 6^↑ ̂
+  key <AE07> {[ U0037, U0026, U2049, U2048 ]}; # 7&⁉⁈
+  key <AE08> {[ U0038, U002A, U221E, U221A ]}; # 8*∞√
+  key <AE09> {[ U0039, U0028, U2190, U2264 ]}; # 9(←≤
+  key <AE10> {[ U0030, U0029, U2192, U2265 ]}; # 0)→≥
+  key <AE11> {[ U002D, U005F, U2014, U2013 ]}; # -_— –
+  key <AE12> {[ U0447, U0427, U003D, U002B ]}; # чЧ=+
 
-  key <AD01> {[ U044F , U042F ]}; # я
-  key <AD02> {[ U0432 , U0412 ]}; # в
-  key <AD03> {[ U0435 , U0415 , U0451 , U0401 ]}; # е ё
-  key <LatR> {[ Cyrillic_er , Cyrillic_ER , U00AE , U221A ]}; # р ® √
-  key <LatT> {[ Cyrillic_te , Cyrillic_TE , U2122 , U2122 ]};
-  key <LatY> {[ Cyrillic_yeru , Cyrillic_YERU , U0457 , U0407 ]};
-  key <LatU> {[ Cyrillic_u , Cyrillic_U , U045E , U040E ]};
-  key <LatI> {[ Cyrillic_i , Cyrillic_I , U0456 , U0406 ]};
-  key <LatO> {[ Cyrillic_o , Cyrillic_O , U00B0 , U2205 ]}; # о
-  key <LatP> {[ Cyrillic_pe , Cyrillic_PE ]};
-  key <AD11> {[ Cyrillic_sha , Cyrillic_SHA , U005B , U007B ]};
-  key <AD12> {[ Cyrillic_shcha , Cyrillic_SHCHA , U005D , U007D ]};
-  key <BKSL> {[ Cyrillic_e , Cyrillic_E , U005C , U007C ]};
+  key <AD01> {[ U044F, U042F ]};               # яЯ
+  key <AD02> {[ U0432, U0412 ]};               # вВ
+  key <AD03> {[ U0435, U0415, U0451, U0401 ]}; # еЕёЁ
+  key <LatR> {[ U0440, U0420, U00AE, U221A ]}; # рР®√
+  key <LatT> {[ U0442, U0422, U2122, U2122 ]}; # тТ™™
+  key <LatY> {[ U044B, U042B, U0457, U0407 ]}; # ыЫїЇ
+  key <LatU> {[ U0443, U0423, U045E, U040E ]}; # уУўЎ
+  key <LatI> {[ U0438, U0418, U0456, U0406 ]}; # иИіІ
+  key <LatO> {[ U043E, U041E, U00B0, U2205 ]}; # оО°∅
+  key <LatP> {[ U043F, U041F ]};               # пП
+  key <AD11> {[ U0448, U0428, U005B, U007B ]}; # шШ[{
+  key <AD12> {[ U0449, U0429, U005D, U007D ]}; # щЩ]}
+  key <BKSL> {[ U044D, U042D, U005C, U007C ]}; # эЭ\|
 
-  key <LatA> {[ Cyrillic_a , Cyrillic_A, U2248, U00B6]};
-  key <LatS> {[ Cyrillic_es , Cyrillic_ES ]};
-  key <LatD> {[ Cyrillic_de , Cyrillic_DE, U00F7, U2215 ]};
-  key <LatF> {[ Cyrillic_ef , Cyrillic_EF , U0473 , U0472 ]};
-  key <LatG> {[ Cyrillic_ghe , Cyrillic_GHE , U0491 , U0490 ]};
-  key <LatH> {[ Cyrillic_ha , Cyrillic_HA  ]};
-  key <LatJ> {[ Cyrillic_shorti , Cyrillic_SHORTI , U0475 , U0474 ]};
-  key <LatK> {[ Cyrillic_ka , Cyrillic_KA , U201C , U2018 ]};
-  key <LatL> {[ Cyrillic_el , Cyrillic_EL , U201D , U2019 ]};
-  key <AC10> {[ semicolon , colon ]};
-  key <AC11> {[ apostrophe , quotedbl , U0454 , U0404 ]};
+  key <LatA> {[ U0430, U0410, U2248, U00B6 ]}; # аА≈¶
+  key <LatS> {[ U0441, U0421 ]};               # сС
+  key <LatD> {[ U0434, U0414, U00F7 ]};        # дД÷
+  key <LatF> {[ U0444, U0424, U0473, U0472 ]}; # фФѳѲ
+  key <LatG> {[ U0433, U0413, U0491, U0490 ]}; # гГґҐ
+  key <LatH> {[ U0445, U0425 ]};               # хХ
+  key <LatJ> {[ U0439, U0419, U0475, U0474 ]}; # йЙѵѴ
+  key <LatK> {[ U043A, U041A, U201C, U2018 ]}; # кК“‘
+  key <LatL> {[ U043B, U041B, U201D, U2019 ]}; # лЛ”’
+  key <AC10> {[ U003B, U003A ]};               # ;:
+  key <AC11> {[ U0027, U0022, U0454, U0404 ]}; # '"єЄ
 
-  key <LatZ> {[ Cyrillic_ze , Cyrillic_ZE , U045F , U040F ]};
-  key <LatX> {[ Cyrillic_softsign, Cyrillic_SOFTSIGN, Cyrillic_hardsign, Cyrillic_HARDSIGN ]};
-  key <LatC> {[ Cyrillic_tse , Cyrillic_TSE , U00A9 , U2103 ]};
-  key <LatV> {[ Cyrillic_zhe , Cyrillic_ZHE , U2193 , U030C ]};
-  key <LatB> {[ Cyrillic_be , Cyrillic_BE, U0463 , U0462 ]};
-  key <LatN> {[ Cyrillic_en , Cyrillic_EN , U2260 , U2301 ]};
-  key <LatM> {[ Cyrillic_em , Cyrillic_EM , U2212 , U00D7 ]};
-  key <AB08> {[ comma , less , U00AB , U201E ]};
-  key <AB09> {[ period , greater , U00BB , U201C ]};
-  key <AB10> {[ slash , question , U2026 , U0301 ]};
-  key <LSGT> {[ bar , brokenbar ]};
-  key <SPCE> {[U0020, U0020, U00A0, U00A0]};
+  key <LatZ> {[ U0437, U0417, U045F, U040F ]}; # зЗџЏ
+  key <LatX> {[ U044C, U042C, U044A, U042A ]}; # ьЬъЪ
+  key <LatC> {[ U0446, U0426, U00A9, U2103 ]}; # цЦ©℃
+  key <LatV> {[ U0436, U0416, U2193, U030C ]}; # жЖ↓ ̌
+  key <LatB> {[ U0431, U0411, U0463, U0462 ]}; # бБѣѢ
+  key <LatN> {[ U043D, U041D, U2260        ]}; # нН≠
+  key <LatM> {[ U043C, U041C, U2212, U00D7 ]}; # мМ−×
+  key <AB08> {[ U002C, U003C, U00AB, U201E ]}; # ,<«„
+  key <AB09> {[ U002E, U003E, U00BB, U201C ]}; # .>»“
+  key <AB10> {[ U002F, U002F, U2026, U0301 ]}; # /?… ́
+
+  key <LSGT> {[ U007C, U00A6 ]};
+  key <SPCE> {[ U0020, U0020, U00A0, U00A0]};
 
 
 };

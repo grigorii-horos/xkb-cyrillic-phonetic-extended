@@ -52,7 +52,7 @@ xkb_symbols "ruexph" {
   key <LatM> {[ U043C, U041C, U2212, U00D7 ]}; # мМ−×
   key <AB08> {[ U002C, U003C, U00AB, U201E ]}; # ,<«„
   key <AB09> {[ U002E, U003E, U00BB, U201C ]}; # .>»“
-  key <AB10> {[ U002F, U002F, U2026, U0301 ]}; # /?… ́
+  key <AB10> {[ U002F, U003F, U2026, U0301 ]}; # /?… ́
 
   key <LSGT> {[ U007C, U00A6 ]};
   key <SPCE> {[ U0020, U0020, U00A0, U00A0]};

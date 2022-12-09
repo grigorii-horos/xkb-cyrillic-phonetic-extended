@@ -1,18 +1,17 @@
     <layout>
       <configItem>
-        <name>ru_ex</name>
-        <shortDescription>ru</shortDescription>
-        <description>Фонетическая со специальными символами</description>
+        <name>cyrex</name>
+        <shortDescription>CYREX</shortDescription>
+        <description>Cyrillic Phonetical (Extended)</description>
+        <countryList>
+          <iso3166Id>RU</iso3166Id>
+          <iso3166Id>UA</iso3166Id>
+          <iso3166Id>BY</iso3166Id>
+        </countryList>
         <languageList>
           <iso639Id>rus</iso639Id>
+          <iso639Id>ukr</iso639Id>
+          <iso639Id>bel</iso639Id>
         </languageList>
       </configItem>
-      <variantList>
-        <variant>
-          <configItem>
-            <name>ruexph</name>
-            <description>Фонетическая со специальными символами</description>
-          </configItem>
-        </variant>
-      </variantList>
     </layout>

@@ -16,20 +16,20 @@ for line in source:
         index_open = i
         its_rukbi = False
 
-    if re.search('rukbi', line):
+    if re.search('cyrex', line):
         its_rukbi = True
 
     if re.search('</layout>', line):
         if its_rukbi:
             for j in range(index_open, i + 1):
-                source[j] = "rukbi"
+                source[j] = "cyrex"
 
     i = i + 1
 
 result = []
 
 for line in source:
-    if not re.search('rukbi', line):
+    if not re.search('cyrex', line):
         result.append(line)
 
     if re.search('<layoutList>', line):

@@ -17,7 +17,7 @@ with open(sys.argv[1]) as file:
 result = []
 
 for line in source:
-    if not re.search('rukbi', line):
+    if not re.search('cyrex', line):
         result.append(line)
 
     if re.search('! layout', line):

@@ -1,7 +1,6 @@
 partial alphanumeric_keys
-xkb_symbols "ruexph" {
-
-  name[Group1] = "Russian Extended Phonetical";
+xkb_symbols "cyrex" {
+  name[Group1] = "Cyrillic Phonetical (Extended)";
 
   key <TLDE> {[ U044E, U042E, U0060, U007E ]}; # юЮ`~
   key <AE01> {[ U0031, U0021, U00B9, U2048 ]}; # 1!¹
@@ -56,6 +55,4 @@ xkb_symbols "ruexph" {
 
   key <LSGT> {[ U007C, U00A6 ]};
   key <SPCE> {[ U0020, U0020, U00A0, U00A0]};
-
-
 };

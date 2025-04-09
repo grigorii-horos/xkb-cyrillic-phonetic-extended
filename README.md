@@ -1,33 +1,25 @@
-# Расширенная русская фонетическая клавиатурная раскладка
+# Extended Cyrillic Phonetic Keyboard Layout
 
-Расширенная русская фонетическая клавиатурная раскладка которая позволяет также вводить украинские и белорусские буквы, а также символы дореформенной орфографии.
+An extended Cyrillic phonetic keyboard layout that also supports most Cyrillic letters from various alphabets.
 
-## Основная идея
+## Installation
 
-Эта раскладка сделана для удобного ввода русских, украинских и белоруских букв, математических символов и знаков пунктуации. Она была сделана с оглядкой на раскладку Бирмана, но без уймы ненужных типографских символов или других редко используемых (например знак фунта или градусы Фаренгейта).
+Run `install/install` with superuser privileges:
 
-## Установка
-
-Запустите `install/install` с привилегиями суперпользователя:
-
-```sh
+```sh  
 sudo install/install
 ```
 
-Он должен позаботиться об установке. В случае возникновения осложнений необходимо самостоятельно установить путь к директории XKB и запустить скрипт с параметром командной строки:
+It should take care of the installation. If any issues arise, you will need to manually specify the path to the XKB directory and run the script with a command-line parameter:
 
-```sh
+```sh  
 sudo install/install -d /usr/local/X11/xkb
 ```
 
-## Сейчас раскладка выглядит так
+## Current Layout
 
-![Раскладка](layout.png)
+![Layout](layout.png)
 
 ## TODO
 
-* Добавить новые символы
-
----
-
-Скрипты основаны на [«Рукби»](http://besisland.name/rukbi/)
+* Add new symbols

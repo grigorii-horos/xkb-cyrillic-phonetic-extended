@@ -1,6 +1,6 @@
-partial alphanumeric_keys
+default partial alphanumeric_keys
 xkb_symbols "cyrex" {
-  name[Group1] = "Cyrillic Phonetical (Extended)";
+  name[Group1] = "Cyrillic Phonetic (Extended)";
 
   key <TLDE> {[ U044E, U042E, U0060, U007E ]}; # ю Ю ` ~
   key <AE01> {[ U0031, U0021, U00B9, U2048 ]}; # 1 ! ¹

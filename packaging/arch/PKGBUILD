@@ -1,0 +1,31 @@
+# Maintainer: Grigorii Horos <horosgrisa@gmail.com>
+pkgname=xkb-cyrillic-phonetic-extended-git
+_name=xkb-cyrillic-phonetic-extended
+pkgver=r28.0000000
+pkgrel=1
+pkgdesc="Extended Cyrillic phonetic keyboard layout (cyrex) for libxkbcommon/Wayland"
+arch=(any)
+url="https://github.com/grigorii-horos/xkb-cyrillic-phonetic-extended"
+license=(GPL-3.0-or-later)
+depends=('libxkbcommon>=1.13' 'xkeyboard-config>=2.45')
+makedepends=(git pkgconf)
+checkdepends=(libxml2)
+provides=("$_name")
+conflicts=("$_name")
+source=("$_name::git+$url.git")
+sha256sums=('SKIP')
+
+pkgver() {
+  cd "$_name"
+  printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short=7 HEAD)"
+}
+
+check() {
+  cd "$_name"
+  make check
+}
+
+package() {
+  cd "$_name"
+  make DESTDIR="$pkgdir" PREFIX=/usr install
+}

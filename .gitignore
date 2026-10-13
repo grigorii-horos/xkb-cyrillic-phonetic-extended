@@ -1,1 +1,4 @@
-node_modules/
+# makepkg build artifacts
+packaging/arch/*/
+packaging/arch/*.pkg.tar*
+packaging/arch/*.log

@@ -1,8 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xkbConfigRegistry SYSTEM "xkb.dtd">
+<xkbConfigRegistry version="1.1">
+  <layoutList>
     <layout>
       <configItem>
         <name>cyrex</name>
-        <shortDescription>CYREX</shortDescription>
-        <description>Cyrillic Phonetical (Extended)</description>
+        <shortDescription>cyrex</shortDescription>
+        <description>Cyrillic Phonetic (Extended)</description>
         <countryList>
           <iso3166Id>RU</iso3166Id>
           <iso3166Id>UA</iso3166Id>
@@ -15,3 +19,5 @@
         </languageList>
       </configItem>
     </layout>
+  </layoutList>
+</xkbConfigRegistry>

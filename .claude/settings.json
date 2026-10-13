@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(make check)",
+      "Bash(xmllint --noout:*)",
+      "Bash(xkbcli compile-keymap:*)",
+      "Bash(xkbcli list:*)",
+      "Bash(xkbcli how-to-type:*)",
+      "Bash(pkg-config:*)",
+      "Bash(namcap:*)",
+      "Bash(makepkg --printsrcinfo)"
+    ],
+    "deny": [
+      "Bash(sudo make install:*)",
+      "Bash(sudo cp:* /usr/share/X11/xkb/*)"
+    ]
+  }
+}

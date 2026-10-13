@@ -1,6 +1,6 @@
 # xkb-cyrillic-phonetic-extended
 
-XKB keyboard layout `cyrex` (extended Russian phonetic), packaged as an
+XKB keyboard layout `cyrex` (extended Cyrillic phonetic), packaged as an
 xkeyboard-config **extension** for libxkbcommon ≥ 1.13 / Wayland.
 X11 (Xorg server) is intentionally not supported.
 

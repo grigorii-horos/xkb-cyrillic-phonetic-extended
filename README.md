@@ -1,8 +1,8 @@
 # Extended Cyrillic Phonetic Keyboard Layout
 
-An extended Russian phonetic (ЯВЕРТЫ-style) keyboard layout, `cyrex`. The
+An extended Cyrillic phonetic (ЯВЕРТЫ-style) keyboard layout, `cyrex`. The
 third and fourth levels add Ukrainian and Belarusian letters (ї, і, є, ґ, ў),
-ђ and џ, pre-reform Russian letters (ѣ, ѳ, ѵ, і), and common math and
+ђ and џ, historical Cyrillic letters (ѣ, ѳ, ѵ, і), and common math and
 typographic symbols.
 
 ![Layout](layout.png)

@@ -1,7 +1,7 @@
 # Maintainer: Grigorii Horos <horosgrisa@gmail.com>
 pkgname=xkb-cyrillic-phonetic-extended-git
 _name=xkb-cyrillic-phonetic-extended
-pkgver=r28.22ae9b0
+pkgver=r31.88c55a3
 pkgrel=1
 pkgdesc="Extended Cyrillic phonetic keyboard layout (cyrex) for libxkbcommon/Wayland"
 arch=(any)

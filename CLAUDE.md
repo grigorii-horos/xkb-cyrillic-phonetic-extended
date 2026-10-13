@@ -6,11 +6,15 @@ X11 (Xorg server) is intentionally not supported.
 
 ## Layout of the repo
 
-- `symbols/cyrex` — the layout. One `default` map named `cyrex`. Each key line
-  ends with a comment listing the characters; keep it in sync when editing.
+- `symbols/cyrex` — the layout. `default` map `cyrex` (common Cyrillic) plus
+  variants `rus`, `ukr`, `bel` that `include "cyrex(cyrex)"` and override only
+  the keys where that language's letters go to the base level (displaced
+  letters move to levels 3/4). Each key line ends with a comment listing the
+  characters; keep it in sync when editing.
 - `rules/evdev.xml` — a complete `xkbConfigRegistry` document with one
-  `<layout>`; libxkbregistry merges it into the system list. Keep the
-  `<description>` identical to `name[Group1]` in `symbols/cyrex`.
+  `<layout>` and a `<variantList>` for rus/ukr/bel; libxkbregistry merges it
+  into the system list. Keep each `<description>` identical to the matching
+  `name[Group1]` in `symbols/cyrex`, and the README variants table in sync.
 - `Makefile` — `check`, `install`/`uninstall` (system-wide into
   `$(pkg-config --variable=xkb_unversioned_extensions_path xkbcommon)/cyrex`),
   `install-user`/`uninstall-user` (`~/.config/xkb`).
@@ -29,11 +33,12 @@ X11 (Xorg server) is intentionally not supported.
 ## Verify changes
 
 ```sh
-make check   # xmllint on evdev.xml + compile keymap and assert <TLDE> = ю
+make check   # xmllint on evdev.xml + compile every map and assert a key per map
 ```
 
-`xkbcli compile-keymap` exits 0 even for an unknown layout, so `check` greps
-the compiled keymap instead of trusting the exit code.
+`xkbcli compile-keymap` exits 0 even for an unknown layout or variant, so
+`check` greps the compiled keymap instead of trusting the exit code. In zsh,
+build xkbcli arguments as arrays: `${v:+--variant $v}` is passed as ONE word.
 
 Test the installed-package path without installing:
 
@@ -43,6 +48,6 @@ XKB_CONFIG_UNVERSIONED_EXTENSIONS_PATH=$PWD/pkg/*/usr/share/xkeyboard-config.d \
   xkbcli list | grep -A3 "layout: 'cyrex'"
 ```
 
-The developer machine may still have a stray `/usr/share/X11/xkb/symbols/cyrex`
-from the old installer. The extension directory has a higher priority, but the
-stray file can hide a missing-include mistake in ad-hoc tests.
+The installed package (`/usr/share/xkeyboard-config.d/cyrex`) is also on the
+default include path; in ad-hoc tests pass `--include .` first so the work tree
+wins over it.

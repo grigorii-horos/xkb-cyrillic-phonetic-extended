@@ -7,6 +7,22 @@ typographic symbols.
 
 ![Layout](layout.png)
 
+## Variants
+
+| XKB name     | Name                           | Differences from `cyrex`                      |
+|--------------|--------------------------------|-----------------------------------------------|
+| `cyrex`      | Cyrillic Phonetic (Extended)   | — (shown in the picture above)                |
+| `cyrex(rus)` | Russian Phonetic (Extended)    | none, only listed under Russian               |
+| `cyrex(ukr)` | Ukrainian Phonetic (Extended)  | `Y` и, `I` і, `\` є; ы ї э ʼ on level 3     |
+| `cyrex(bel)` | Belarusian Phonetic (Extended) | `I` і, `]` ў; и щ ʼ on level 3              |
+
+In the language variants the letters of that language are on the base level.
+Letters they displace move to levels 3 and 4 of the same or a nearby key:
+
+- **ukr**: `Y` и И / ы Ы, `I` і І / ї Ї, `\` є Є / \ |, `'` ' " / э Э,
+  `X` ь Ь / ʼ ъ
+- **bel**: `I` і І / и И, `]` ў Ў / ] }, `U` у У / щ Щ, `X` ь Ь / ʼ ъ
+
 ## How it is installed
 
 The layout is shipped as an [xkeyboard-config extension][ext]: a
@@ -91,12 +107,12 @@ layouts there, merge the `<layout>` entry from `rules/evdev.xml` by hand.
 ## Enabling the layout
 
 Log out and back in after installing, then add **Cyrillic Phonetic
-(Extended)** as an input source:
+(Extended)** or one of its language variants as an input source:
 
 - **GNOME**: Settings → Keyboard → Input Sources → Add (search “Cyrillic”).
 - **KDE Plasma**: System Settings → Keyboard → Layouts → Add.
-- **sway**: `input type:keyboard xkb_layout us,cyrex`
-- **Hyprland**: `input { kb_layout = us,cyrex }`
+- **sway**: `input type:keyboard { xkb_layout us,cyrex; xkb_variant ,ukr }`
+- **Hyprland**: `input { kb_layout = us,cyrex; kb_variant = ,ukr }`
 
 The third and fourth levels are reached with the system's level-3 key
 (usually right Alt, configured as *Key to choose the 3rd level*).

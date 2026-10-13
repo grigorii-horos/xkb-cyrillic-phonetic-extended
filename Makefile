@@ -22,9 +22,15 @@ all:
 
 check:
 	xmllint --noout rules/evdev.xml
-	@# xkbcli exits 0 even for an unknown layout, so inspect the result.
+	@# xkbcli exits 0 even for an unknown layout, so inspect the result:
+	@# <TLDE> = ю in every map, <AD08> (I) = и in cyrex/rus and і in ukr/bel.
 	xkbcli compile-keymap --include . --include-defaults --layout $(NAME) \
 		| grep -q 'key <TLDE> *{[[:space:]]*\[ *U044E'
+	set -e; for v in rus:U0438 ukr:U0456 bel:U0456; do \
+		xkbcli compile-keymap --include . --include-defaults \
+			--layout $(NAME) --variant $${v%%:*} \
+			| grep -q "key <AD08> *{[[:space:]]*\[ *$${v#*:}"; \
+	done
 
 install:
 	install -Dm644 symbols/$(NAME)  $(PKGDIR)/symbols/$(NAME)
